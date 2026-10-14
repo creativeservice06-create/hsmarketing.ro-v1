@@ -1,0 +1,6 @@
+Vercel: Framework Next.js / Root Directory = folderul care conține package.json.
+Dacă GitHub afișează direct package.json, app/ și components/, Root Directory = ./
+Dacă GitHub afișează folderul HardService_Profesional_v7, Root Directory = HardService_Profesional_v7
+Instalează dependențele cu npm install, build = npm run build.
+Variabile contact: vezi .env.example. Verifică SMTP, consent/cookie și tag manager pe Preview.
+Nu suprascrie codul live fără backup. Insignele de parteneriat pot fi afișate doar cu drepturile aferente.
