@@ -1,0 +1,11 @@
+PENTRU PUBLICARE:
+1. Dezarhivează ZIP-ul.
+2. Creează un repository / branch nou; pune TOATE fișierele din interior (nu ZIP-ul însuși).
+3. În Vercel: New Project -> Import Git Repository -> Framework Next.js -> Deploy.
+4. Setează variabilele SMTP_HOST, SMTP_PORT, SMTP_USER, SMTP_PASS, CONTACT_TO.
+5. Testează formularul de contact și telefonul. Conectează domeniul doar după verificări.
+6. Dacă activezi GTM, verifică înainte CookieYes / Consent Mode.
+
+ATENȚIE: Acesta este un proiect complet independent, nu un patch pe vechiul cod.
+Paginile de servicii incluse sunt noi: salvează paginile SEO detaliate din repository-ul vechi înainte de orice înlocuire.
+Proiectele sunt demonstrative. Fără rezultate inventate, fără insignă Google Partner neverificată.
