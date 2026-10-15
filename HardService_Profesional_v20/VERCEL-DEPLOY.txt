@@ -1,0 +1,9 @@
+HARD SERVICE v20 — DEPLOY
+
+1. Deschide ZIP-ul și încarcă doar conținutul în rădăcina GitHub.
+2. Verifică în GitHub că package.json, app/, lib/, components/ și public/ sunt vizibile direct.
+3. Vercel -> Settings -> Build and Deployment -> Root Directory: ./ (dacă package.json este în rădăcină).
+4. Environment Variables: NEXT_PUBLIC_SITE_URL=https://DOMENIUL-PUBLIC-REAL (nu lăsa alt domeniu în canonical).
+5. Configurează variabilele SMTP din .env.example pentru formular. Nu publica parole.
+6. Testează Deploy Preview, apoi fă publicarea finală.
+7. Dacă apare eroare, copiază Build Logs; nu ghici o altă configurație.
