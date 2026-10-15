@@ -1,0 +1,130 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 716 870" role="img" aria-label="Animație: Google, Meta și TikTok Ads, de la reclamă la contact" class="hs-hero17-svg">
+  <defs>
+    <linearGradient id="h17bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#f7fbff"/>
+      <stop offset="100%" stop-color="#edf5ff"/>
+    </linearGradient>
+    <linearGradient id="h17phone" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#1b2638"/>
+      <stop offset="58%" stop-color="#081322"/>
+      <stop offset="100%" stop-color="#516b91"/>
+    </linearGradient>
+    <linearGradient id="h17pill" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#4c95ff"/>
+      <stop offset="100%" stop-color="#1d63ee"/>
+    </linearGradient>
+    <linearGradient id="h17bar" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#9cc2ff"/>
+      <stop offset="100%" stop-color="#2f78e6"/>
+    </linearGradient>
+    <filter id="h17shadow" x="-40%" y="-40%" width="180%" height="180%">
+      <feDropShadow dx="0" dy="12" stdDeviation="16" flood-color="#244a84" flood-opacity=".14"/>
+    </filter>
+    <filter id="h17soft" x="-40%" y="-40%" width="180%" height="180%">
+      <feDropShadow dx="0" dy="8" stdDeviation="12" flood-color="#244a84" flood-opacity=".10"/>
+    </filter>
+  </defs>
+  <rect x="0" y="0" width="716" height="870" rx="24" fill="url(#h17bg)"/>
+  <path d="M-40 328 Q170 56 272 -32" fill="none" stroke="#fff" stroke-width="92" opacity=".65"/>
+  <ellipse cx="575" cy="548" rx="162" ry="154" fill="#c2d9ff" opacity=".26"/>
+  <path d="M545 116 L582 72 L610 101 L665 32 L648 25 L694 19 L700 66 L681 52 L607 137 L580 108 L555 133 Z" fill="#86b3ff" opacity=".72"/>
+
+  <g class="h17-logo-card h17-logo1"><rect x="40" y="118" width="74" height="74" rx="22" fill="#fff" filter="url(#h17soft)"/><image href="file:///mnt/data/v17work/public/brands/google-ads-logo.svg" x="58" y="136" width="38" height="38" preserveAspectRatio="xMidYMid meet"/></g>
+  <g class="h17-logo-card h17-logo2"><rect x="40" y="260" width="74" height="74" rx="22" fill="#fff" filter="url(#h17soft)"/><image href="file:///mnt/data/v17work/public/brands/meta-platforms-logo.svg" x="54" y="284" width="46" height="28" preserveAspectRatio="xMidYMid meet"/></g>
+  <g class="h17-logo-card h17-logo3"><rect x="40" y="398" width="74" height="74" rx="22" fill="#fff" filter="url(#h17soft)"/><image href="file:///mnt/data/v17work/public/brands/tiktok-official-user.png" x="56" y="413" width="42" height="42" preserveAspectRatio="xMidYMid meet"/></g>
+
+  <g transform="translate(126 42) rotate(-2.5 156 315)" filter="url(#h17shadow)">
+    <rect x="0" y="0" width="312" height="622" rx="44" fill="url(#h17phone)"/>
+    <rect x="8" y="8" width="296" height="606" rx="39" fill="#ffffff"/>
+    <rect x="12" y="12" width="288" height="598" rx="36" fill="#fbfdff"/>
+    <rect x="103" y="0" width="106" height="22" rx="0" fill="#091422"/>
+    <circle cx="198" cy="11" r="4" fill="#213a5c"/>
+    <text x="131" y="74" font-size="42" font-weight="700" fill="#4285f4">G</text>
+    <text x="157" y="74" font-size="42" font-weight="700" fill="#ea4335">o</text>
+    <text x="179" y="74" font-size="42" font-weight="700" fill="#fbbc05">o</text>
+    <text x="202" y="74" font-size="42" font-weight="700" fill="#4285f4">g</text>
+    <text x="227" y="74" font-size="42" font-weight="700" fill="#34a853">l</text>
+    <text x="236" y="74" font-size="42" font-weight="700" fill="#ea4335">e</text>
+    <rect x="28" y="92" width="232" height="40" rx="20" fill="#fff" stroke="#dfe6f1"/>
+    <text x="44" y="117" font-size="15" fill="#4d627d">servicii promovare</text>
+    <rect x="258" y="92" width="32" height="40" rx="11" fill="#2a78e8"/>
+    <circle cx="274" cy="109" r="7" fill="none" stroke="#fff" stroke-width="2"/>
+    <path d="M279 114 l6 6" stroke="#fff" stroke-width="2" stroke-linecap="round"/>
+    <text x="36" y="160" font-size="12" fill="#2a78e8" font-weight="700">Toate</text>
+    <text x="90" y="160" font-size="11" fill="#73859b">Imagini</text>
+    <text x="149" y="160" font-size="11" fill="#73859b">Videoclipuri</text>
+    <text x="238" y="160" font-size="11" fill="#73859b">Știri</text>
+    <rect x="34" y="167" width="32" height="2.8" rx="2" fill="#2a78e8"/>
+    <line x1="28" y1="176" x2="290" y2="176" stroke="#e7edf6"/>
+    <text x="41" y="224" font-size="12" fill="#6f8298">hardservicesrl.ro</text>
+    <text x="41" y="257" font-size="18" font-weight="700" fill="#2164c4">Servicii de promovare</text>
+    <text x="41" y="281" font-size="18" font-weight="700" fill="#2164c4">online pentru firme</text>
+    <text x="41" y="315" font-size="13" fill="#6b7e94">Google Ads · Meta Ads · TikTok Ads</text>
+    <text x="41" y="338" font-size="13" fill="#6b7e94">Mai multe contacte și vânzări.</text>
+  </g>
+
+  <g class="h17-card-float1" filter="url(#h17shadow)">
+    <rect x="62" y="160" width="250" height="168" rx="22" fill="#fff"/>
+    <rect x="76" y="176" width="34" height="18" rx="9" fill="#eef8ef" stroke="#d7ead8"/>
+    <text x="83" y="189" font-size="11" font-weight="700" fill="#33824e">Anunț</text>
+    <text x="76" y="218" font-size="13" font-weight="700" fill="#4f8664">companie.ro</text>
+    <text x="76" y="258" font-size="16" font-weight="700" fill="#2368cb">Produse sau servicii</text>
+    <text x="76" y="280" font-size="16" font-weight="700" fill="#2368cb">pentru compania ta</text>
+    <text x="76" y="314" font-size="12.5" fill="#62748b">Reclame create pentru a atrage</text>
+    <text x="76" y="332" font-size="12.5" fill="#62748b">vizite pe site, apeluri și cereri de</text>
+    <text x="76" y="350" font-size="12.5" fill="#62748b">ofertă.</text>
+  </g>
+
+  <g class="h17-card-float2" filter="url(#h17shadow)">
+    <rect x="430" y="138" width="220" height="176" rx="22" fill="#fff"/>
+    <text x="452" y="176" font-size="18" font-weight="700" fill="#273752">Rezultate orientative</text>
+    <circle cx="618" cy="168" r="18" fill="#edf9ef"/>
+    <path d="M612 174 L624 162 M617 162 h7 v7" fill="none" stroke="#22ab66" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
+    <text x="452" y="214" font-size="12" fill="#6b7e94">Contacte noi</text>
+    <text x="452" y="250" font-size="26" font-weight="700" fill="#18a15f">+125%</text>
+    <rect x="578" y="236" width="10" height="11" rx="3" fill="url(#h17bar)" class="h17bar1"/>
+    <rect x="594" y="227" width="10" height="20" rx="3" fill="url(#h17bar)" class="h17bar2"/>
+    <rect x="610" y="216" width="10" height="31" rx="3" fill="url(#h17bar)" class="h17bar3"/>
+    <rect x="626" y="203" width="10" height="44" rx="3" fill="url(#h17bar)" class="h17bar4"/>
+    <text x="452" y="286" font-size="12" fill="#6b7e94">Vizite pe site</text>
+    <text x="452" y="322" font-size="26" font-weight="700" fill="#18a15f">+87%</text>
+    <rect x="572" y="309" width="10" height="11" rx="3" fill="url(#h17bar)" class="h17bar1"/>
+    <rect x="588" y="299" width="10" height="21" rx="3" fill="url(#h17bar)" class="h17bar2"/>
+    <rect x="604" y="287" width="10" height="33" rx="3" fill="url(#h17bar)" class="h17bar3"/>
+    <rect x="620" y="272" width="10" height="48" rx="3" fill="url(#h17bar)" class="h17bar4"/>
+  </g>
+
+  <g class="h17-pill-float" filter="url(#h17soft)">
+    <rect x="255" y="432" width="250" height="56" rx="28" fill="url(#h17pill)"/>
+    <text x="278" y="468" font-size="14" fill="#ffd37c">⚡</text>
+    <text x="300" y="467" font-size="17" font-weight="700" fill="#fff">De la reclamă la contact</text>
+  </g>
+
+  <g class="h17-steps-panel" filter="url(#h17shadow)">
+    <rect x="70" y="500" width="576" height="136" rx="24" fill="#fff"/>
+    <g transform="translate(125 518)"><circle cx="0" cy="26" r="25" fill="#edf4ff"/><text x="0" y="33" text-anchor="middle" font-size="24">📣</text><text x="0" y="78" text-anchor="middle" font-size="15" font-weight="700" fill="#213752">Reclamă</text><text x="0" y="98" text-anchor="middle" font-size="15" font-weight="700" fill="#213752">online</text></g>
+    <text x="177" y="575" font-size="24" fill="#6497f2" font-weight="700">···→</text>
+    <g transform="translate(270 518)"><circle cx="0" cy="26" r="25" fill="#edf4ff"/><text x="0" y="33" text-anchor="middle" font-size="22">🖥️</text><text x="0" y="78" text-anchor="middle" font-size="15" font-weight="700" fill="#213752">Vizită</text><text x="0" y="98" text-anchor="middle" font-size="15" font-weight="700" fill="#213752">pe site</text></g>
+    <text x="322" y="575" font-size="24" fill="#6497f2" font-weight="700">···→</text>
+    <g transform="translate(405 518)"><circle cx="0" cy="26" r="25" fill="#edf4ff"/><text x="0" y="33" text-anchor="middle" font-size="22">📄</text><text x="0" y="78" text-anchor="middle" font-size="15" font-weight="700" fill="#213752">Cerere</text><text x="0" y="98" text-anchor="middle" font-size="15" font-weight="700" fill="#213752">de contact</text></g>
+    <text x="460" y="575" font-size="24" fill="#6497f2" font-weight="700">···→</text>
+    <g transform="translate(555 518)"><circle cx="0" cy="26" r="25" fill="#edf4ff"/><text x="0" y="33" text-anchor="middle" font-size="22">👥</text><circle cx="18" cy="18" r="10" fill="#21d48b"/><path d="M14 18 l3 3 l6 -7" fill="none" stroke="#fff" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/><text x="0" y="78" text-anchor="middle" font-size="15" font-weight="700" fill="#213752">Mai mulți</text><text x="0" y="98" text-anchor="middle" font-size="15" font-weight="700" fill="#213752">clienți</text></g>
+  </g>
+
+  <g class="h17-chart-float" filter="url(#h17shadow)">
+    <rect x="150" y="648" width="378" height="132" rx="24" fill="#fff"/>
+    <text x="176" y="689" font-size="19" font-weight="700" fill="#233754">Performanță campanii</text>
+    <rect x="408" y="668" width="65" height="28" rx="14" fill="#edf9ef"/><text x="421" y="687" font-size="15" font-weight="700" fill="#16a561">↑ +142%</text>
+    <line x1="176" y1="739" x2="484" y2="739" stroke="#e4eaf4"/>
+    <line x1="176" y1="717" x2="484" y2="717" stroke="#e4eaf4"/>
+    <line x1="176" y1="760" x2="484" y2="760" stroke="#e4eaf4"/>
+    <path class="h17-graph-line" d="M184 751 C205 725, 225 724, 244 738 S286 744, 309 730 S342 714, 364 723 S394 716, 418 696 S454 714, 478 680" fill="none" stroke="#2a77e5" stroke-width="3.2" stroke-linecap="round"/>
+    <circle cx="184" cy="751" r="4.6" fill="#2a77e5"/><circle cx="218" cy="732" r="4.6" fill="#2a77e5"/><circle cx="272" cy="736" r="4.6" fill="#2a77e5"/><circle cx="330" cy="723" r="4.6" fill="#2a77e5"/><circle cx="389" cy="709" r="4.6" fill="#2a77e5"/><circle cx="422" cy="713" r="4.6" fill="#2a77e5"/><circle cx="478" cy="680" r="4.6" fill="#2a77e5"/>
+    <text x="180" y="793" font-size="11" fill="#6d8198">Ian</text><text x="242" y="793" font-size="11" fill="#6d8198">Feb</text><text x="302" y="793" font-size="11" fill="#6d8198">Mar</text><text x="360" y="793" font-size="11" fill="#6d8198">Apr</text><text x="418" y="793" font-size="11" fill="#6d8198">Mai</text><text x="472" y="793" font-size="11" fill="#6d8198">Iun</text>
+  </g>
+
+  <g class="h17-badges">
+    <image href="file:///mnt/data/v17work/public/badges/google-premier-partner-2026.svg" x="166" y="798" width="135" height="52" preserveAspectRatio="xMidYMid meet"/>
+    <image href="file:///mnt/data/v17work/public/badges/meta-business-partner.svg" x="330" y="794" width="175" height="58" preserveAspectRatio="xMidYMid meet"/>
+  </g>
+</svg>
