@@ -1,8 +1,0 @@
-import type {Metadata} from 'next';
-import Header from '@/components/Header';
-import Footer from '@/components/Footer';
-import ContactForm from '@/components/ContactForm';
-import {SITE} from '@/lib/site';
-import {CheckCircle2,Phone} from 'lucide-react';
-export const metadata:Metadata={title:{absolute:'Contact și Ofertă Promovare Online | Hard Service'},description:'Cere o ofertă pentru Google Ads, Meta Ads, TikTok Ads, creare site-uri sau SEO tehnic. Contactează Hard Service prin formular sau telefon.',alternates:{canonical:'/contact/'}};
-export default function ContactPage(){return <><Header/><main><section className="hs-contact-section hs-contact-page"><div className="container hs-contact-grid"><div className="hs-contact-lead"><span className="hs-overline">CONTACT HARD SERVICE</span><h1>Spune-ne ce vrei să obții online.</h1><p>Nu este nevoie să alegi deja platforma. Ne poți descrie afacerea, serviciile și rezultatul dorit, iar noi discutăm opțiunile posibile.</p><div className="hs-contact-points"><span><CheckCircle2 size={19}/> Administrare Google Ads și Meta Ads</span><span><CheckCircle2 size={19}/> TikTok Ads și materiale promoționale</span><span><CheckCircle2 size={19}/> Site-uri, magazine online și tracking</span></div><a className="hs-contact-phone" href={SITE.phoneHref}><Phone size={19}/>{SITE.phone}</a><p className="hs-contact-company">{SITE.legalName} · CUI {SITE.cui}</p></div><div className="hs-contact-form-wrap" id="formular"><div className="hs-form-heading"><span>FORMULAR DE OFERTĂ</span><h2>Cere o propunere</h2><p>Explică pe scurt obiectivul și revenim pentru detalii.</p></div><ContactForm/></div></div></section></main><Footer/></>}
