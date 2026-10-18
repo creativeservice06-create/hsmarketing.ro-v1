@@ -20,7 +20,7 @@ export default function TrustMetrics() {
     <div className="hs24-trust-card hs24-trust-spend">
       <div className="hs24-metric-top"><BarChart3 size={23} strokeWidth={1.9}/><span>ADMINISTRARE ADS</span></div>
       <strong className="hs24-metric">50<span>+</span></strong>
-      <span className="hs24-metric-description">conturi publicitare administrate</span>
+      
       <span className="hs26-metric-platforms">Bugete administrate lunar</span>
       <span className="hs26-metric-platform-list">Google Ads · Meta Ads · TikTok Ads</span>
     </div>
