@@ -40,7 +40,7 @@ export default function Home(){return <><Header/><main id="top">
   <section className="hs24-hero" aria-labelledby="hero-title"><div className="container hs24-hero-inner">
     <div className="hs24-hero-copy">
       <div className="hs24-eyebrow"><span className="hs24-eyebrow-dot"/> AGENȚIE DE PROMOVARE ONLINE · ROMÂNIA</div>
-      <h1 id="hero-title">Mai mult decât click-uri, atragem clienții potriviți pentru afacerea ta. <span>Google Ads, Meta Ads și TikTok Ads.</span></h1>
+      <h1 id="hero-title">Atragem clienții potriviți pentru afacerea ta. <span>Google Ads, Meta Ads și TikTok Ads.</span></h1>
       <p className="hs24-lead">Administrăm reclame în Google, Facebook, Instagram și TikTok pentru firme și magazine online. Construim paginile pe care ajung clienții, configurăm conversiile și explicăm transparent ce îmbunătățim.</p>
       <div className="hs24-hero-actions"><Link href="/contact/#formular" className="hs-btn hs-btn-primary">Cere ofertă <ArrowUpRight size={20}/></Link><Link href="/#proiecte" className="hs-btn hs-btn-outline">Vezi portofoliul <ArrowRight size={18}/></Link></div>
       <div className="hs24-hero-details"><span><CheckCircle2 size={18}/> Administrare campanii și website</span><span><CheckCircle2 size={18}/> Tracking, rapoarte și suport</span><span><CheckCircle2 size={18}/> Abonamente de la 200 lei / săptămână</span></div>
