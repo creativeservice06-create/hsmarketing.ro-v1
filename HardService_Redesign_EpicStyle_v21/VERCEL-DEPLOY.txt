@@ -1,0 +1,11 @@
+Hard Service v21 — Deploy
+
+1. Încărcați fișierele din interiorul ZIP-ului în rădăcina repository-ului.
+2. Confirmați existența package.json lângă folderele app/, components/, lib/, public/.
+3. Vercel → Settings → Root Directory: ./ (dacă fișierele sunt în rădăcină).
+4. Build command: npm run build; Framework: Next.js.
+5. NEXT_PUBLIC_SITE_URL=https://domeniul-final.ro
+6. Configurați SMTP_HOST, SMTP_PORT, SMTP_USER, SMTP_PASS, CONTACT_TO pentru formular.
+7. Verificați badge-urile și setările GDPR/GTM, apoi publicați.
+
+Nu setați Root Directory pe un nume de folder care nu există în repo. Dacă ați urcat din greșeală un folder exterior, selectați calea în care se află package.json.
