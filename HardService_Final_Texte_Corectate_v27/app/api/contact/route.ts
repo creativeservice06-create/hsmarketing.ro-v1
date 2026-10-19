@@ -28,12 +28,22 @@ export async function POST(req:Request){
     const to=process.env.CONTACT_TO||SITE.email;
     if(!user||!pass){recent.delete(key);return NextResponse.json({error:'Formularul nu este disponibil momentan. Te rugăm să ne suni direct.'},{status:503})}
     const transporter=nodemailer.createTransport({host,port,secure:port===465,auth:{user,pass},connectionTimeout:20_000,tls:{minVersion:'TLSv1.2'}});
-  await transporter.sendMail({
+  
+await transporter.sendMail({
   from: user,
   to: to,
-  subject: 'Test formular Hard Service',
-  text: 'Acesta este un mesaj de test.',
+  subject: 'Solicitare nouă - Hard Service',
+  text: `Solicitare de pe hsmarketing.ro
+
+Nume: ${nume} ${prenume}
+Email: ${email}
+Telefon: ${telefon}
+Serviciu: ${serviciu || 'Neselectat'}
+
+Mesaj:
+${mesaj}`,
 });
+
 
 return NextResponse.json({ ok: true });
   }catch(err){if(key)recent.delete(key);const smtpError = err as {
