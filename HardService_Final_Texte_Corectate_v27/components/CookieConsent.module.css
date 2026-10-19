@@ -82,5 +82,3 @@
   .dialogActions { display: grid; grid-template-columns: 1fr; }
 }
 @media (prefers-reduced-motion: reduce) { .primary, .secondary { transition: none; } }
-/* Hide the existing sticky mobile CTA while the consent interface is shown. */
-:global(body.hs-cookie-consent-visible) :global(.hs24-mobile-actions) { visibility: hidden !important; pointer-events: none !important; }
