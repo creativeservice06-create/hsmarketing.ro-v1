@@ -768,3 +768,9 @@ h1,h2,h3 {font-weight:800;letter-spacing:-.046em}
  .hs26-metric-platforms{font-size:14px}
  .hs26-metric-platform-list{font-size:12.5px}
 }
+
+/* Ascunde butoanele fixe de pe mobil când este deschis bannerul de cookie-uri */
+body.hs-cookie-consent-visible .hs24-mobile-actions {
+  visibility: hidden !important;
+  pointer-events: none !important;
+}
