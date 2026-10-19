@@ -10,7 +10,7 @@ export const metadata:Metadata={
   title:{default:'Promovare Google Ads, Meta Ads și TikTok Ads | Hard Service',template:'%s | Hard Service'},
   description:'Administrare Google Ads, Meta Ads și TikTok Ads, creare site-uri și magazine online, SEO tehnic și tracking conversii pentru firme.',
   alternates:{canonical:'/'},
-  openGraph:{type:'website',locale:'ro_RO',siteName:'Hard Service Marketing',url:SITE.url,title:'Promovare Google Ads, Meta Ads și TikTok Ads | Hard Service',description:'Administrare campanii PPC și Meta Ads, creare site-uri și optimizare conversii pentru firme.',images:[{url:'/og-hard-service.png',width:1200,height:630,alt:'Hard Service — Google Ads, Meta Ads, TikTok Ads și Website'}]},twitter:{card:'summary_large_image',images:['/og-hard-service.png']},
+  openGraph:{type:'website',locale:'ro_RO',siteName:'Hard Service Marketing',url:SITE.url,title:'Promovare Google Ads, Meta Ads și TikTok Ads | Hard Service',description:'Administrare campanii PPC și Meta Ads, creare site-uri și optimizare conversii pentru firme.',images:[{url:'/og-hard-service-v2',width:1200,height:630,alt:'Hard Service — Google Ads, Meta Ads, TikTok Ads și Website'}]},twitter:{card:'summary_large_image',images:['/og-hard-service-v2']},
   robots:process.env.VERCEL_ENV==='preview'?{index:false,follow:false}:{index:true,follow:true},
   icons:{icon:'/icon.svg'},
 };
