@@ -1,0 +1,193 @@
+/* Hard Service — banner compact albastru/bleumarin, cu exact structura
+   modelului: text in stânga, două butoane mici suprapuse în dreapta.
+   CSS Module: fără selectori globali nepermiși de Next.js. */
+.banner {
+  position: fixed;
+  z-index: 1000;
+  left: max(12px, env(safe-area-inset-left));
+  bottom: max(12px, env(safe-area-inset-bottom));
+  box-sizing: border-box;
+  width: min(498px, calc(100% - 24px));
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 126px;
+  align-items: center;
+  gap: 14px;
+  padding: 13px 14px;
+  color: #edf4ff;
+  background: #10213a;
+  border: 1px solid #2d4568;
+  border-radius: 10px;
+  box-shadow: 0 10px 26px rgba(10, 29, 58, .24);
+  font-family: 'DM Sans', Arial, sans-serif;
+}
+.bannerText { min-width: 0; }
+.banner .bannerText p {
+  margin: 0;
+  color: #eaf0fa;
+  font-size: 12px;
+  line-height: 1.38;
+  font-weight: 450;
+  letter-spacing: -.005em;
+}
+.banner .policyLink,
+.banner .settingsInline {
+  display: inline;
+  padding: 0;
+  margin: 0;
+  border: 0;
+  background: transparent;
+  color: #7fb2ff;
+  font: inherit;
+  font-weight: 750;
+  text-decoration: none;
+  cursor: pointer;
+}
+.banner .policyLink:hover,
+.banner .settingsInline:hover { text-decoration: underline; text-underline-offset: 2px; }
+.actions {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+  min-width: 0;
+}
+.banner .primary,
+.banner .secondary {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  box-sizing: border-box;
+  min-height: 33px;
+  padding: 7px 8px;
+  margin: 0;
+  border-radius: 999px;
+  font: inherit;
+  font-size: 11.5px;
+  line-height: 1.15;
+  font-weight: 750;
+  white-space: nowrap;
+  cursor: pointer;
+  transition: background-color .16s ease, border-color .16s ease;
+}
+.banner .secondary {
+  color: #f6f9ff;
+  background: transparent;
+  border: 1px solid #7d93b0;
+}
+.banner .secondary:hover { background: #1c3453; border-color: #b3c3df; }
+.banner .primary {
+  color: #fff;
+  background: #1b62df;
+  border: 1px solid #1b62df;
+}
+.banner .primary:hover { background: #1553c3; border-color: #1553c3; }
+.banner .primary:focus-visible,
+.banner .secondary:focus-visible,
+.banner .policyLink:focus-visible,
+.banner .settingsInline:focus-visible {
+  outline: 2px solid #bad6ff;
+  outline-offset: 2px;
+}
+@media (max-width: 480px) {
+  .banner {
+    left: max(8px, env(safe-area-inset-left));
+    bottom: max(8px, env(safe-area-inset-bottom));
+    width: calc(100% - 16px);
+    grid-template-columns: minmax(0, 1fr) 115px;
+    gap: 10px;
+    padding: 11px 11px;
+    border-radius: 9px;
+  }
+  .banner .bannerText p { font-size: 11.5px; line-height: 1.39; }
+  .banner .primary, .banner .secondary { min-height: 32px; padding: 7px 6px; font-size: 10.6px; }
+  .actions { gap: 7px; }
+}
+@media (max-width: 340px) {
+  .banner { grid-template-columns: minmax(0, 1fr) 103px; gap: 9px; padding: 10px; }
+  .banner .bannerText p { font-size: 11px; }
+  .banner .primary, .banner .secondary { font-size: 10px; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .banner .primary, .banner .secondary { transition: none; }
+}
+
+/* Preferințe detaliate — aceeași identitate vizuală, fără culori străine de site. */
+.backdrop {
+  position: fixed;
+  inset: 0;
+  z-index: 1010;
+  display: grid;
+  place-items: center;
+  padding: 18px;
+  background: rgba(12, 29, 52, .56);
+  backdrop-filter: blur(3px);
+}
+.dialog {
+  box-sizing: border-box;
+  width: min(100%, 570px);
+  max-height: 90dvh;
+  overflow-y: auto;
+  padding: 29px;
+  border: 1px solid #e3eaf5;
+  border-radius: 17px;
+  background: #ffffff;
+  color: #15243b;
+  box-shadow: 0 28px 75px rgba(6, 24, 55, .22);
+  font-family: 'DM Sans', Arial, sans-serif;
+}
+.eyebrow { font-size: 10px; font-weight: 800; letter-spacing: .09em; color: #1b62df; margin-bottom: 8px; }
+.dialog h2 { font-size: 25px; line-height: 1.2; color: #10213c; margin: 0 0 10px; letter-spacing: -.025em; }
+.dialog p { font-size: 14px; line-height: 1.58; color: #556783; margin: 0; }
+.dialogTop { display: flex; align-items: start; justify-content: space-between; gap: 15px; margin-bottom: 8px; }
+.close { display: grid; place-items: center; background: #f2f6fc; border: 1px solid #dbe5f3; border-radius: 9px; width: 38px; height: 38px; font-size: 28px; line-height: 1; cursor: pointer; color: #203753; flex-shrink: 0; }
+.close:hover { background: #e8f0fc; }
+.category { display: flex; align-items: center; justify-content: space-between; gap: 15px; padding: 17px 0; border-bottom: 1px solid #e6ecf4; cursor: pointer; }
+.category strong { display: block; color: #15243b; font-size: 15px; font-weight: 800; margin-bottom: 4px; }
+.category p { font-size: 13px; max-width: 390px; }
+.category input { flex-shrink: 0; width: 20px; height: 20px; cursor: pointer; accent-color: #1b62df; }
+.always { white-space: nowrap; font-size: 12px; color: #245c3d; background: #e9f6ed; padding: 6px 8px; border-radius: 7px; font-weight: 750; }
+.dialogActions { display: flex; justify-content: flex-end; flex-wrap: wrap; gap: 10px; margin-top: 22px; }
+.dialog .primary, .dialog .secondary { min-height: 43px; padding: 11px 17px; border-radius: 9px; font: inherit; font-size: 13px; font-weight: 750; cursor: pointer; transition: background-color .16s ease; }
+.dialog .primary { color: #ffffff; background: #1b62df; border: 1px solid #1b62df; }
+.dialog .primary:hover { background: #1552bd; }
+.dialog .secondary { color: #193456; background: #ffffff; border: 1px solid #c6d5e9; }
+.dialog .secondary:hover { background: #f2f6fc; }
+.footnote { margin-top: 17px !important; font-size: 12px !important; }
+.footerButton { display: inline; padding: 0; color: inherit; background: transparent; border: 0; cursor: pointer; font: inherit; text-decoration: underline; text-underline-offset: 3px; }
+.footerButton:hover { opacity: .8; }
+.footerButton:focus-visible, .policyLink:focus-visible, .settingsInline:focus-visible, .primary:focus-visible, .secondary:focus-visible, .close:focus-visible, .category input:focus-visible { outline: 3px solid #8cb7fc; outline-offset: 3px; }
+
+@media (max-width: 560px) {
+  .banner {
+    left: max(10px, env(safe-area-inset-left));
+    bottom: max(10px, env(safe-area-inset-bottom));
+    width: calc(100% - 20px);
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 14px;
+    padding: 17px 17px 16px;
+    border-radius: 13px;
+    max-height: 80dvh;
+    overflow-y: auto;
+  }
+  .banner::before { top: 16px; bottom: 16px; }
+  .banner .bannerTitle { font-size: 15px; margin-bottom: 6px; }
+  .banner .bannerText p { font-size: 12.5px; line-height: 1.53; }
+  .bannerLinks { margin-top: 9px; gap: 5px 15px; }
+  .actions { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 9px; }
+  .banner .primary, .banner .secondary { min-height: 41px; font-size: 12px; padding: 9px 7px; }
+  .dialog { padding: 21px; }
+  .category { align-items: flex-start; }
+  .always { white-space: normal; text-align: center; }
+  .dialogActions { display: grid; grid-template-columns: 1fr; }
+}
+@media (max-width: 340px) {
+  .banner { padding: 14px 13px; }
+  .bannerLinks { gap: 7px 11px; }
+  .banner .primary, .banner .secondary { font-size: 11px; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .banner .primary, .banner .secondary, .dialog .primary, .dialog .secondary { transition: none; }
+  .backdrop { backdrop-filter: none; }
+}
