@@ -1,7 +1,7 @@
 export const SITE = {
   name: 'Hard Service Marketing',
   legalName: 'HARD SERVICE SRL',
-  url: (process.env.NEXT_PUBLIC_SITE_URL || 'https://www.hardservicesrl.ro').replace(/\/$/, ''),
+  url: (process.env.NEXT_PUBLIC_SITE_URL || 'https://www.hsmarketing.ro').replace(/\/$/, ''),
   phone: '0740 231 358',
   phoneHref: 'tel:+40740231358',
   email: 'chirilasadrian@yahoo.com',
