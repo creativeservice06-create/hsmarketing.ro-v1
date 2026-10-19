@@ -28,15 +28,14 @@ export async function POST(req:Request){
     const to=process.env.CONTACT_TO||SITE.email;
     if(!user||!pass){recent.delete(key);return NextResponse.json({error:'Formularul nu este disponibil momentan. Te rugăm să ne suni direct.'},{status:503})}
     const transporter=nodemailer.createTransport({host,port,secure:port===465,auth:{user,pass},connectionTimeout:20_000,tls:{minVersion:'TLSv1.2'}});
-    await transporter.sendMail({
+  await transporter.sendMail({
   from: user,
   to: to,
   subject: 'Test formular Hard Service',
   text: 'Acesta este un mesaj de test.',
-});,
-      text:`Solicitare de pe hardservicesrl.ro\nNume: ${nume} ${prenume}\nEmail: ${email}\nTelefon: ${telefon}\nServiciu: ${serviciu||'Neselectat'}\n\n${mesaj}`,
-      html:`<div style="font-family:Arial,sans-serif;color:#17243a;max-width:620px"><h2>Solicitare nouă Hard Service</h2><p><b>Nume:</b> ${escapeHtml(nume)} ${escapeHtml(prenume)}</p><p><b>Email:</b> ${escapeHtml(email)}</p><p><b>Telefon:</b> ${escapeHtml(telefon)}</p><p><b>Serviciu:</b> ${escapeHtml(serviciu||'Neselectat')}</p><p><b>Mesaj:</b></p><div style="padding:16px;background:#f2f7ff;border-radius:10px;white-space:pre-wrap">${escapeHtml(mesaj)}</div></div>`});
-    return NextResponse.json({ok:true});
+});
+
+return NextResponse.json({ ok: true });
   }catch(err){if(key)recent.delete(key);const smtpError = err as {
   code?: string;
   command?: string;
