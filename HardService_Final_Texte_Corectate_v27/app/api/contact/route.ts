@@ -32,5 +32,17 @@ export async function POST(req:Request){
       text:`Solicitare de pe hardservicesrl.ro\nNume: ${nume} ${prenume}\nEmail: ${email}\nTelefon: ${telefon}\nServiciu: ${serviciu||'Neselectat'}\n\n${mesaj}`,
       html:`<div style="font-family:Arial,sans-serif;color:#17243a;max-width:620px"><h2>Solicitare nouă Hard Service</h2><p><b>Nume:</b> ${escapeHtml(nume)} ${escapeHtml(prenume)}</p><p><b>Email:</b> ${escapeHtml(email)}</p><p><b>Telefon:</b> ${escapeHtml(telefon)}</p><p><b>Serviciu:</b> ${escapeHtml(serviciu||'Neselectat')}</p><p><b>Mesaj:</b></p><div style="padding:16px;background:#f2f7ff;border-radius:10px;white-space:pre-wrap">${escapeHtml(mesaj)}</div></div>`});
     return NextResponse.json({ok:true});
-  }catch(err){if(key)recent.delete(key);console.error('Contact send error:',err instanceof Error?err.message:String(err));return NextResponse.json({error:'Trimiterea nu a reușit. Încearcă din nou sau sună-ne.'},{status:500});}
+  }catch(err){if(key)recent.delete(key);const smtpError = err as {
+  code?: string;
+  command?: string;
+  responseCode?: number;
+  message?: string;
+};
+
+console.error('Contact send error:', {
+  code: smtpError.code,
+  command: smtpError.command,
+  responseCode: smtpError.responseCode,
+  message: smtpError.message,
+});return NextResponse.json({error:'Trimiterea nu a reușit. Încearcă din nou sau sună-ne.'},{status:500});}
 }
