@@ -14,14 +14,14 @@ export default function TrustMetrics() {
     <div className="hs24-trust-card hs24-trust-projects">
       <div className="hs24-metric-top"><BriefcaseBusiness size={23} strokeWidth={1.9}/><span>PORTOFOLIU</span></div>
       <strong className="hs24-metric">20<span>+</span></strong>
-      <span className="hs24-metric-description">proiecte realizate</span>
+      <span className="hs24-metric-description">colaboratori și proiecte realizate</span>
       <a href="/#proiecte" className="hs24-metric-link">Vezi o selecție <ArrowUpRight size={15}/></a>
     </div>
     <div className="hs24-trust-card hs24-trust-spend">
       <div className="hs24-metric-top"><BarChart3 size={23} strokeWidth={1.9}/><span>ADMINISTRARE ADS</span></div>
       <strong className="hs24-metric">50<span>+</span></strong>
       
-      <span className="hs26-metric-platforms">Bugete administrate lunar</span>
+      <span className="hs26-metric-platforms">Conturi administrate</span>
       <span className="hs26-metric-platform-list">Google Ads · Meta Ads · TikTok Ads</span>
     </div>
   </div>;
