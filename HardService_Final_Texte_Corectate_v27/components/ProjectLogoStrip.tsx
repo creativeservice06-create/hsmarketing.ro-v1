@@ -3,11 +3,11 @@ import {PROJECTS} from '@/lib/projects';
 
 // Bandă sub Hero: siglele proiectelor (cele cu siglă salvată local) rulează automat pe un singur rând.
 // Click pe orice siglă duce la secțiunea Portofoliu (#proiecte).
-const COPIES=6; // lista se repetă ca banda să fie plină și pe ecrane foarte late; animația mută jumătate din ea
+const COPIES=4; // lista se repetă ca banda să fie mereu plină; animația mută jumătate din ea
 
 export default function ProjectLogoStrip(){
  const items=PROJECTS.filter(p=>p.logo);
- return <section className="hs-logo-strip" aria-label="Proiecte realizate">
+ return <section className="hs-logo-strip" aria-label="Proiecte realizate"><div className="container">
   <div className="hs-logo-strip-viewport">
    <div className="hs-logo-strip-track">
     {Array.from({length:COPIES}).flatMap((_,c)=>items.map(p=>
@@ -17,5 +17,5 @@ export default function ProjectLogoStrip(){
     ))}
    </div>
   </div>
- </section>;
+ </div></section>;
 }
