@@ -1,5 +1,7 @@
 export type Project = {name:string;domain:string;url:string;category:string;description:string;logo?:string;featured?:boolean;logoClass?:string};
 export const PROJECTS:Project[] = [
+ {name:'Chimag',domain:'chimag.ro',url:'https://chimag.ro/',category:'Magazin online',description:'Magazin online cu comenzi, plăți cu cardul și livrare prin curier.',logo:'/portfolio/chimag-logo.png',logoClass:'is-wide'},
+ {name:'Vila Rândunica',domain:'vilabusteni.ro',url:'https://vilabusteni.ro/',category:'Turism și cazare',description:'Website de rezervări online pentru o vilă din Bușteni.',logo:'/portfolio/vila-randunica.png'},
  {name:'Șomag',domain:'somag.ro',url:'https://somag.ro/',category:'Platformă web',description:'Platformă web și prezentarea informațiilor digitale.'},
  {name:'Permis Moto',domain:'permismoto.ro',url:'https://permismoto.ro/',category:'Educație moto',description:'Website pentru prezentarea cursurilor moto și înscrieri.'},
  {name:'Carnet Barcă',domain:'carnetbarca.ro',url:'https://carnetbarca.ro/',category:'Cursuri navigație',description:'Site de prezentare a cursurilor și ofertelor de navigație.'},
@@ -12,6 +14,4 @@ export const PROJECTS:Project[] = [
  {name:'Emailat Căzi Baie',domain:'emailatcazibaie.ro',url:'https://emailatcazibaie.ro/',category:'Recondiționare',description:'Site pentru servicii de recondiționare.'},
  {name:'Enjoy Driving',domain:'enjoydriving.ro',url:'https://enjoydriving.ro/',category:'Cursuri auto, moto și navigație',description:'Website cu informații despre cursuri de conducere și navigație.',logo:'/portfolio/enjoy-driving-logo.png',featured:true,logoClass:'is-enjoy'},
  {name:'Fire Stop',domain:'ignifugare.eu',url:'https://www.ignifugare.eu/',category:'Ignifugare',description:'Website de servicii de ignifugare și protecție împotriva incendiilor.',logo:'/portfolio/fire-stop.png',featured:true,logoClass:'is-firestop'},
- {name:'Chimag',domain:'chimag.ro',url:'https://chimag.ro/',category:'Magazin online',description:'Magazin online cu comenzi, plăți cu cardul și livrare prin curier.',logo:'/portfolio/chimag-logo.png',logoClass:'is-wide'},
- {name:'Vila Rândunica',domain:'vilabusteni.ro',url:'https://vilabusteni.ro/',category:'Turism și cazare',description:'Website de rezervări online pentru o vilă din Bușteni.',logo:'/portfolio/vila-randunica.png'},
 ];
