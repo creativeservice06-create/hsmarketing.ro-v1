@@ -7,6 +7,7 @@ import PartnerBadges from '@/components/PartnerBadges';
 import BrandMark from '@/components/BrandMark';
 import ContactForm from '@/components/ContactForm';
 import ProjectLogoGrid from '@/components/ProjectLogoGrid';
+import ProjectLogoStrip from '@/components/ProjectLogoStrip';
 import TrustMetrics from '@/components/TrustMetrics';
 import {SITE,PACKAGES,FAQ} from '@/lib/site';
 
@@ -47,6 +48,7 @@ export default function Home(){return <><Header/><main id="top">
     </div>
     <TrustMetrics/>
   </div></section>
+  <ProjectLogoStrip/>
 
   <section id="probleme" className="hs-section hs-problem-section"><div className="container">
     <div className="hs-section-heading hs-heading-row"><div><span className="hs-overline">CÂND ESTE NEVOIE DE NOI</span><h2>Când click-urile nu se transformă în clienți.</h2></div><p>Nu este suficient să atragi vizitatori pe site. Identificăm unde se pierd oportunitățile și ce merită schimbat pentru cereri de ofertă mai relevante.</p></div>
@@ -58,6 +60,8 @@ export default function Home(){return <><Header/><main id="top">
     <Link href="/google-ads/" className="hs-audience-card"><span className="hs-audience-symbol"><Phone size={25}/></span><strong>Firme de servicii și B2B</strong><p>Campanii pe căutări relevante, pagini dedicate și cereri de ofertă pe care le poți urmări.</p><span>Vezi promovarea Google Ads <ArrowUpRight size={17}/></span></Link>
     <Link href="/magazin-online/" className="hs-audience-card"><span className="hs-audience-symbol"><Wallet size={25}/></span><strong>Magazine online</strong><p>Pagini de produse, feed-uri de produse, checkout și măsurarea comenzilor pentru campanii de vânzare.</p><span>Vezi serviciile e-commerce <ArrowUpRight size={17}/></span></Link>
   </div></section>
+
+  <section className="hs-section hs-portfolio-section" id="proiecte"><div className="container"><div className="hs-section-heading hs-section-heading-v23"><span className="hs-overline">PORTOFOLIU REAL</span><h2>Proiectele noastre, în domenii diferite.</h2><p>De la servicii și educație până la domenii tehnice. Logo-urile duc către website-urile proiectelor din portofoliu.</p></div><ProjectLogoGrid/></div></section>
 
   <section id="servicii" className="hs-section hs-services-section"><div className="container">
     <div className="hs-section-heading hs-heading-row"><div><span className="hs-overline">SERVICII HARD SERVICE</span><h2>Serviciile pe care le conectăm într-o singură strategie.</h2></div><p>Lucrăm pe canalele potrivite afacerii tale. Descoperă ce configurăm, ce optimizăm și ce date folosim pentru a evalua fiecare serviciu.</p></div>
@@ -79,8 +83,6 @@ export default function Home(){return <><Header/><main id="top">
     <div className="hs-process-grid">{process.map(p=><article className="hs-process-card" key={p.n}><span>{p.n}</span><h3>{p.title}</h3><p>{p.text}</p></article>)}</div>
     <div className="hs-work-statement"><ShieldCheck size={22}/><span>Conturile, paginile și datele tale rămân sub controlul firmei tale. Stabilim de la început accesurile și responsabilitățile.</span></div>
   </div></section>
-
-  <section className="hs-section hs-portfolio-section" id="proiecte"><div className="container"><div className="hs-section-heading hs-section-heading-v23"><span className="hs-overline">PORTOFOLIU REAL</span><h2>Proiectele noastre, în domenii diferite.</h2><p>De la servicii și educație până la domenii tehnice. Logo-urile duc către website-urile proiectelor din portofoliu.</p></div><ProjectLogoGrid/></div></section>
 
   <section className="hs-section hs-pricing-section" id="preturi"><div className="container"><div className="hs-section-heading hs-section-heading-v23"><span className="hs-overline">PREȚURI TRANSPARENTE</span><h2>Administrare transparentă. Fără costuri ascunse.</h2><p>Prețurile sunt săptămânale și se referă la administrare, optimizare și suport. Bugetul reclamelor se achită separat, direct platformei.</p></div>
   <div className="hs-pricing-grid hs-pricing-grid-v23">{PACKAGES.map(pkg=><article className={`hs-price-card hs-price-card-v23 ${pkg.featured?'is-featured':''}`} key={pkg.name}>

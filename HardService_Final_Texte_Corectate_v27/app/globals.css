@@ -774,3 +774,17 @@ body.hs-cookie-consent-visible .hs24-mobile-actions {
   visibility: hidden !important;
   pointer-events: none !important;
 }
+
+/* v28 — bandă proiecte sub Hero */
+.hs-logo-strip{background:#fff;border-top:1px solid var(--line2);border-bottom:1px solid var(--line2);padding:20px 0}
+.hs-logo-strip-inner{display:flex;align-items:center;gap:28px}
+.hs-logo-strip-label{flex:none;font-size:12px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--subtle)}
+.hs-logo-strip-logos{flex:1;display:flex;align-items:center;justify-content:space-around;gap:26px;min-width:0}
+.hs-logo-strip-logos a{display:flex;align-items:center;opacity:.85;transition:opacity .2s,transform .2s}
+.hs-logo-strip-logos a:hover{opacity:1;transform:translateY(-2px)}
+.hs-logo-strip-logos img{display:block;width:auto;height:auto;max-height:44px;max-width:130px;object-fit:contain}
+.hs-logo-strip-link{flex:none;display:inline-flex;align-items:center;gap:6px;font-size:14px;font-weight:700;color:var(--blue)}
+@media(max-width:900px){.hs-logo-strip-inner{flex-wrap:wrap;justify-content:center;gap:14px 20px}.hs-logo-strip-label{width:100%;text-align:center}.hs-logo-strip-logos{flex:0 0 100%;justify-content:center;flex-wrap:wrap;gap:16px 24px}.hs-logo-strip-logos img{max-height:38px;max-width:108px}}
+.hs-logo-strip-logos img[src$=".svg"]{width:120px}
+.hs-logo-strip-logos img{max-height:52px}
+@media(max-width:900px){.hs-logo-strip-logos img[src$=".svg"]{width:100px}.hs-logo-strip-logos{gap:16px 18px}.hs-logo-strip-logos img{max-height:42px;max-width:96px}}
